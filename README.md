@@ -29,13 +29,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 #############################################################################################
 
-1) C:\Users\Santosh>npm install -g create-react-app
+## 1) C:\Users\Santosh>npm install -g create-react-app
 
 C:\Users\Santosh\AppData\Roaming\npm\create-react-app -> C:\Users\Santosh\AppData\Roaming\npm\node_modules\create-react-app\index.js
 + create-react-app@3.4.1
 added 98 packages from 46 contributors in 41.791s
 
-2) Change to actual folder path
+##2) Change to actual folder path
 E:\React\FirstApp>cd E:\React\FirstApp
 E:\React\FirstApp>create-react-app react-complete-guide --script-version 1.1.5
 
@@ -44,35 +44,34 @@ Creating a new React app in E:\React\FirstApp\react-complete-guide.
 Installing packages. This might take a couple of minutes.
 Installing react, react-dom, and react-scripts with cra-template...
 
-3) cd react-complete-guide
-4) npm start
+## 3) cd react-complete-guide
+## 4) npm start
 starts app on port  - http://localhost:3000
 
------ JSX Restrictions ----------
+## JSX Restrictions
 
 1) In JSX we can not use class instead use className
 2) Must wrap everything inside root component
 
--------------------------------------------------------Events-----------------------------------------------------------------------
+## Events
 
--------------- Template------------
+#Template
+
 <div class="form-control">
     <!-- input is event. on event trigger pass event info -->
     <input type="text" name="inpjuttext" (input)="typingCapturing($event)">
     {{ typingCaptured }}
 </div>
 
--------------- Component------------
+## Component
  typingCapturing(event : Event) { // Capture event into Event type
     /* event.target = cast event into HTMLInputElement so we can 
        access it's value (Only available for input elements)
     */
     this.typingCaptured = (<HTMLInputElement>event.target).value;
  }
-------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------
 
-Two way binding and FormModule
+##Two way binding and FormModule
 
 Important: FormsModule is Required for Two-Way-Binding!
 Important: For Two-Way-Binding (covered in the lecture 32) to work, you need to enable the ngModel  directive. This is done by adding the FormsModule  to the imports[]  array in the AppModule.
@@ -80,5 +79,3 @@ Important: For Two-Way-Binding (covered in the lecture 32) to work, you need to 
 You then also need to add the import from @angular/forms  in the app.module.ts file:
 
 import { FormsModule } from '@angular/forms'; 
-
-------------------------------------------------------------------------------------------------------------------------------------

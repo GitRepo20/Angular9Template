@@ -1,0 +1,25 @@
+<div class="jumbotron">
+<p class="offset-4 font-weight-bold">Assignment 2 Databinding</p>
+
+<div class="container">
+    <div class="row text-right p-1">
+        <div class="col-md-2 offset-1">
+            <label for="username">Username :</label>
+        </div>
+        <div class="col-md-7">
+            <input type="text" name="username" [(ngModel)]="username" class="form-control">
+        </div>
+    </div>
+    <div class="row text-right p-1">
+        <div class="col-md-2 offset-1">
+            <label for="username">Replica :</label>
+        </div>
+        <div class="col-md-7">
+            <input type="text" name="username" [(ngModel)]="username" class="form-control">
+        </div>
+    </div>
+    <div class="row offset-3 p-2">
+        <button class="btn btn-primary" (click)="reset()">Submit</button>
+    </div>
+</div>
+</div>

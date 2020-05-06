@@ -7,6 +7,7 @@ import { WarningComponent } from './warning/warning.component';
 import { SuccessComponent } from './success/success.component';
 import { EventinfoComponent } from './eventinfo/eventinfo.component';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
+import { Assignment2databindingComponent } from './assignment2databinding/assignment2databinding.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component'
     WarningComponent,
     SuccessComponent,
     EventinfoComponent,
-    TwowaybindingComponent
+    TwowaybindingComponent,
+    Assignment2databindingComponent
   ],
   imports: [
     BrowserModule,

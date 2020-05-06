@@ -8,6 +8,7 @@ import { SuccessComponent } from './success/success.component';
 import { EventinfoComponent } from './eventinfo/eventinfo.component';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 import { Assignment2databindingComponent } from './assignment2databinding/assignment2databinding.component';
+import { NgIfexampleComponent } from './ng-ifexample/ng-ifexample.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Assignment2databindingComponent } from './assignment2databinding/assign
     SuccessComponent,
     EventinfoComponent,
     TwowaybindingComponent,
-    Assignment2databindingComponent
+    Assignment2databindingComponent,
+    NgIfexampleComponent
   ],
   imports: [
     BrowserModule,

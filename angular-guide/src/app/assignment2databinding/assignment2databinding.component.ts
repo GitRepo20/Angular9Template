@@ -14,9 +14,4 @@ export class Assignment2databindingComponent implements OnInit {
     this.username = '';
   }
 
-  reset() {
-    alert(this.username);
-    this.username='';
-  }
-
 }

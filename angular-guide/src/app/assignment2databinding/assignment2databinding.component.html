@@ -19,7 +19,7 @@
         </div>
     </div>
     <div class="row offset-3 p-2">
-        <button class="btn btn-primary" (click)="reset()">Submit</button>
+        <button class="btn btn-primary" [disabled]="username ===''" (click)="username = ''">Submit</button>
     </div>
 </div>
 </div>

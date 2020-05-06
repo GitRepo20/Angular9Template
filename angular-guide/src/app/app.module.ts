@@ -9,6 +9,7 @@ import { EventinfoComponent } from './eventinfo/eventinfo.component';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 import { Assignment2databindingComponent } from './assignment2databinding/assignment2databinding.component';
 import { NgIfexampleComponent } from './ng-ifexample/ng-ifexample.component';
+import { NgIfwithElseexampleComponent } from './ng-ifwith-elseexample/ng-ifwith-elseexample.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgIfexampleComponent } from './ng-ifexample/ng-ifexample.component';
     EventinfoComponent,
     TwowaybindingComponent,
     Assignment2databindingComponent,
-    NgIfexampleComponent
+    NgIfexampleComponent,
+    NgIfwithElseexampleComponent
   ],
   imports: [
     BrowserModule,

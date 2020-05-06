@@ -1,0 +1,26 @@
+<div class="jumbotron">
+    <p class="offset-4 font-weight-bold">*ngIf Example</p>
+    
+<div class="container">
+    <div class="row text-right offset-1 p-1">
+        <div class="col-md-2"> 
+            <label for="ServerName"> Server Name : </label>           
+        </div>
+        <div class="col-md-5">            
+            <input type="text" [(ngModel)]="serverName" class="form-control">
+        </div>
+    </div>
+    <div class="row text-right offset-1 p-1">
+        <!-- else noServer - this condition is refering to local reference #noServer in ng-templagte-->
+        <p class="offset-2 p-1" *ngIf="serverName; else noServer">Condition is true : {{serverName}}</p>
+    </div>
+    <div class="row text-right offset-2 p-1">
+        <ng-template #noServer>
+            <p>No Server Created</p>
+        </ng-template>
+    </div>
+    <div class="row offset-3 text-right offset-1 p-1">
+        <button class="btn btn-primary">Add Data</button>
+    </div>
+</div>
+</div>
